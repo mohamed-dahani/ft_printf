@@ -6,11 +6,11 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/29 15:17:48 by mdahani           #+#    #+#             */
-/*   Updated: 2024/11/29 15:57:09 by mdahani          ###   ########.fr       */
+/*   Updated: 2024/11/30 14:27:49 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "ft_printf.h"
 
 int	ft_putnbr(int nbr)
 {

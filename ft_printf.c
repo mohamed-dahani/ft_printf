@@ -6,11 +6,11 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 13:31:12 by mdahani           #+#    #+#             */
-/*   Updated: 2024/11/30 13:46:14 by mdahani          ###   ########.fr       */
+/*   Updated: 2024/11/30 14:30:47 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdarg.h>
+#include "ft_printf.h"
 
 int check_aplha(va_list list, char c);
 
@@ -54,12 +54,4 @@ int check_aplha(va_list list, char c)
 	else if (c == 'd' || c == 'i')
 		result += ft_putnbr(va_arg(list, int));
 	return (result);
-}
-#include <stdio.h>
-int main(void)
-{
-	char c = 'a';
-	char *str = "mohamed";
-	int nbr = 123;
-	ft_printf("%s", str);
 }

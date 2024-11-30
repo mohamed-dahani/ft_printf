@@ -6,9 +6,11 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/29 15:14:59 by mdahani           #+#    #+#             */
-/*   Updated: 2024/11/29 15:39:45 by mdahani          ###   ########.fr       */
+/*   Updated: 2024/11/30 14:28:28 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "ft_printf.h"
 
 int	ft_putstr(char *str)
 {
