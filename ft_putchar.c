@@ -6,7 +6,7 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/29 15:14:48 by mdahani           #+#    #+#             */
-/*   Updated: 2024/11/30 14:28:04 by mdahani          ###   ########.fr       */
+/*   Updated: 2024/11/30 14:46:04 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,5 @@
 
 int	ft_putchar(char c)
 {
-	int result;
-
-	result = 0;
-	result = write(1, &c, 1);
-	return (result);
+	return (write(1, &c, 1));
 }
