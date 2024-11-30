@@ -6,7 +6,7 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/30 14:25:57 by mdahani           #+#    #+#             */
-/*   Updated: 2024/11/30 17:53:25 by mdahani          ###   ########.fr       */
+/*   Updated: 2024/11/30 18:25:37 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,13 @@ int main(void)
 	char c = 'a';
 	char *str = "mohamed";
 	int nbr = 2000;
+	int dec = -123;
 	ft_printf("%c\n", c);
 	ft_printf("%s\n", str);
 	ft_printf("%d\n", nbr);
 	ft_printf("%p\n", &str);
+	ft_printf("%u\n", dec);
+
+
+	printf("%u", dec);
 }
