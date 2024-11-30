@@ -6,15 +6,15 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/30 16:57:46 by mdahani           #+#    #+#             */
-/*   Updated: 2024/11/30 17:51:58 by mdahani          ###   ########.fr       */
+/*   Updated: 2024/11/30 18:07:36 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static unsigned long	generte_address(unsigned long nbr);
+static int	generte_address(unsigned long nbr);
 
-unsigned long	convert_hexa(unsigned long nbr)
+int	convert_hexa(unsigned long nbr)
 {
 	int	result;
 
@@ -24,7 +24,7 @@ unsigned long	convert_hexa(unsigned long nbr)
 	return (result);
 }
 
-static unsigned long	generte_address(unsigned long nbr)
+static int	generte_address(unsigned long nbr)
 {
 	int		result;
 	char	*hexa_digits;
