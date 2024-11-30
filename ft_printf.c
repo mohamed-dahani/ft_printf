@@ -6,7 +6,7 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 13:31:12 by mdahani           #+#    #+#             */
-/*   Updated: 2024/11/30 19:31:10 by mdahani          ###   ########.fr       */
+/*   Updated: 2024/11/30 19:40:24 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,5 +57,7 @@ static int check_aplha(va_list list, char c)
 		result += convert_hexa(va_arg(list, unsigned long), 'l', 0);
 	else if (c == 'X')
 		result += convert_hexa(va_arg(list, unsigned long), 'u', 0);
+	else if (c == '%')
+		result += ft_putchar(c);
 	return (result);
 }

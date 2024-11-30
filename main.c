@@ -6,7 +6,7 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/30 14:25:57 by mdahani           #+#    #+#             */
-/*   Updated: 2024/11/30 19:34:51 by mdahani          ###   ########.fr       */
+/*   Updated: 2024/11/30 19:40:52 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,4 +26,6 @@ int main(void)
 	ft_printf("%u\n", dec);
 	ft_printf("%x\n", hexa);
 	ft_printf("%X\n", hexa);
+	ft_printf("%%\n");
+	printf("%%\n");
 }
