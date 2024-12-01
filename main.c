@@ -6,7 +6,7 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/30 14:25:57 by mdahani           #+#    #+#             */
-/*   Updated: 2024/12/01 17:36:36 by mdahani          ###   ########.fr       */
+/*   Updated: 2024/12/01 17:54:11 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,8 @@
 
 
 
-// 	printf("%x\n", 0);
-// 	ft_printf("%x\n", 0);
+// 	printf("%p\n", 0);
+// 	ft_printf("%p\n", 0);
 
 // }
 
@@ -43,7 +43,7 @@
 int main (void)
 {
         char c = 'a';
-        char s[] = "TESST 1337 @dahani";
+        char s[] = "TESST 1337 @mdahani";
         int max = 2147483647;
         int min = -2147483648;
         int nul = 0;
