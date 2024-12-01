@@ -6,7 +6,7 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/30 16:57:46 by mdahani           #+#    #+#             */
-/*   Updated: 2024/12/01 17:31:20 by mdahani          ###   ########.fr       */
+/*   Updated: 2024/12/01 17:34:55 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,6 @@ static int	generate_address(unsigned long nbr, char type)
 		result += generate_address(nbr % 16, type);
 	}
 	else
-		result += ft_putchar(nbr[hexa_digits]);
+		result += ft_putchar(hexa_digits[nbr]);
 	return (result);
 }
