@@ -6,13 +6,13 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/30 16:57:46 by mdahani           #+#    #+#             */
-/*   Updated: 2024/12/01 16:10:30 by mdahani          ###   ########.fr       */
+/*   Updated: 2024/12/01 17:31:20 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static int	generte_address(unsigned long nbr, char type);
+static int	generate_address(unsigned long nbr, char type);
 
 int	convert_hexa(unsigned long nbr, char type, int is_true)
 {
@@ -24,11 +24,11 @@ int	convert_hexa(unsigned long nbr, char type, int is_true)
 	result = 0;
 	if (is_true)
 		result += ft_putstr("0x");
-	result += generte_address(nbr, type);
+	result += generate_address(nbr, type);
 	return (result);
 }
 
-static int	generte_address(unsigned long nbr, char type)
+static int	generate_address(unsigned long nbr, char type)
 {
 	int		result;
 	char	*hexa_digits;
@@ -41,8 +41,8 @@ static int	generte_address(unsigned long nbr, char type)
 	
 	if (nbr >= 16)
 	{
-		result += generte_address(nbr / 16, type);
-		result += generte_address(nbr % 16, type);
+		result += generate_address(nbr / 16, type);
+		result += generate_address(nbr % 16, type);
 	}
 	else
 		result += ft_putchar(nbr[hexa_digits]);
