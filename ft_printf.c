@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-static int check_alpha(va_list list, char c);
+static int	check_alpha(va_list list, char c);
 
 int	ft_printf(const char *string, ...)
 {
@@ -40,7 +40,7 @@ int	ft_printf(const char *string, ...)
 	return (result);
 }
 
-static int check_alpha(va_list list, char c)
+static int	check_alpha(va_list list, char c)
 {
 	int	result;
 

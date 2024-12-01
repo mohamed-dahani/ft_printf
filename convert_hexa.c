@@ -22,7 +22,7 @@ int	convert_hexa(unsigned long nbr, char type, int is_true)
 	{
 		if (!is_true)
 			return (write(1, "0", 1));
-		return(write(1, "(nil)", 5));
+		return (write(1, "(nil)", 5));
 	}
 	result = 0;
 	if (is_true)
@@ -41,7 +41,6 @@ static int	generate_address(unsigned long nbr, char type)
 		hexa_digits = "0123456789abcdef";
 	else
 		hexa_digits = "0123456789ABCDEF";
-	
 	if (nbr >= 16)
 	{
 		result += generate_address(nbr / 16, type);
