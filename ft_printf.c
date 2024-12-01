@@ -6,13 +6,13 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 13:31:12 by mdahani           #+#    #+#             */
-/*   Updated: 2024/11/30 19:40:24 by mdahani          ###   ########.fr       */
+/*   Updated: 2024/12/01 17:18:05 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static int check_aplha(va_list list, char c);
+static int check_alpha(va_list list, char c);
 
 int	ft_printf(const char *string, ...)
 {
@@ -20,6 +20,8 @@ int	ft_printf(const char *string, ...)
 	int		result;
 	int		i;
 
+	if (!string)
+		return (0);
 	va_start(list, string);
 	result = 0;
 	i = 0;
@@ -28,7 +30,7 @@ int	ft_printf(const char *string, ...)
 		if (string[i] == '%')
 		{
 			i++;
-			result += check_aplha(list, string[i]);
+			result += check_alpha(list, string[i]);
 		}
 		else
 			result += ft_putchar(string[i]);
@@ -38,7 +40,7 @@ int	ft_printf(const char *string, ...)
 	return (result);
 }
 
-static int check_aplha(va_list list, char c)
+static int check_alpha(va_list list, char c)
 {
 	int	result;
 

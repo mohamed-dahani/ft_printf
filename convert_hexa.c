@@ -6,7 +6,7 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/30 16:57:46 by mdahani           #+#    #+#             */
-/*   Updated: 2024/11/30 19:33:16 by mdahani          ###   ########.fr       */
+/*   Updated: 2024/12/01 16:10:30 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,10 @@ static int	generte_address(unsigned long nbr, char type);
 int	convert_hexa(unsigned long nbr, char type, int is_true)
 {
 	int	result;
-
+	if (!nbr && !is_true)
+		return (write(1, "0", 1));
+	if (!nbr)
+		return(write(1, "(nil)", 5));
 	result = 0;
 	if (is_true)
 		result += ft_putstr("0x");

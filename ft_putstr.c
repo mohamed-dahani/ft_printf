@@ -6,7 +6,7 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/29 15:14:59 by mdahani           #+#    #+#             */
-/*   Updated: 2024/11/30 17:41:48 by mdahani          ###   ########.fr       */
+/*   Updated: 2024/12/01 15:18:57 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,8 @@ int	ft_putstr(char *str)
 	int	i;
 
 	i = 0;
-	if (str == NULL)
-	{
-		write(1, "(null)", 6);
-		return (6);
-	}
+	if (!str)
+		return (write(1, "(null)", 6));
 	while (str[i])
 	{
 		ft_putchar(str[i]);
