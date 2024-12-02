@@ -6,7 +6,7 @@
 /*   By: mdahani <mdahani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/30 16:57:46 by mdahani           #+#    #+#             */
-/*   Updated: 2024/12/01 17:40:26 by mdahani          ###   ########.fr       */
+/*   Updated: 2024/12/02 19:00:39 by mdahani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ int	convert_hexa(unsigned long nbr, char type, int is_true)
 {
 	int	result;
 
+	if (!is_true)
+		nbr = (unsigned int) nbr;
 	if (!nbr)
 	{
 		if (!is_true)
