@@ -21,7 +21,7 @@ int	ft_printf(const char *string, ...)
 	int		i;
 
 	if (!string)
-		return (0);
+		return (-1);
 	va_start(list, string);
 	result = 0;
 	i = 0;
